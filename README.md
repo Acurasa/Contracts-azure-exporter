@@ -47,6 +47,7 @@
 	scp <localpath to script>/binance_futures.py  <Unix Path on vm>
 
 6.Zainstalować Python3 & pip:
+
 	sudo apt-get install azure-cli 
 	sudo apt-get install python3
 	sudo apt install python3-pip
@@ -64,32 +65,32 @@
 **Azure CLI**
 	
 8.Stworzyć zasob Microsoft Azure Blob Storage oraz zalogować się na maszynie wirtualnej:
-	
-	
+```bash
         az login --use-device-code
         az config param-persist on
 	export AZ_RESOURCE_GROUP=<resource group name>	
 	export AZ_STORAGE_ACCOUNT=<storage name>
-	
 	az storage account create \
     	--name ${AZ_STORAGE_ACCOUNT} \
     	--resource-group ${AZ_RESOURCE_GROUP} \
     	--location <eastus> \
     	--sku Standard_ZRS \
     	--encryption-services blob
-	
+```
+
 9.Stworzyć Kontejner Azure Blob Storage:
-
+```bash
+	export AZ_CONTAINER_NAME=<container name>
 	az storage container create \
-		--account-name <storage-account> \
-		--name <container> \
+		--account-name ${AZ_STORAGE_ACCOUNT} \
+		--name ${AZ_CONTAINER_NAME}\
 		--auth-mode login
-
+```
 10.Wysłać wygenerowany plik tekstowy contracts.txt do azure blob storage  
 
 	az storage blob upload \
 	 	--account-name ${AZ_STORAGE_ACCOUNT} \
-	 	--container-name <container> \
+	 	--container-name ${AZ_CONTAINER_NAME} \
 	 	--name <contracts.txt> \
 	 	--file <contracts.txt>
 		
