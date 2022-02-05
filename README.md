@@ -4,7 +4,7 @@
 
 **Program wykonuje GET request z API giełdy handlowej binance, następnie loguje aktywne kontrakty dla wysłania na azure blob storage**
 
-#requirements
+#requirements#
 
 
 **Azure CLI**
