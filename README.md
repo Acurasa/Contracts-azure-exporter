@@ -8,10 +8,6 @@
 ### Zainstalowane 
 **Azure CLI**
 
-## Deploy
-
-**Azure CLI**
-
 # Execute script locally*
 
 	py -m venv env
@@ -21,6 +17,12 @@
 	cd .. 
 	py binance_requests.py
 	deactivate
+	
+## Deploy
+
+**Azure CLI**
+
+
 	
 1.Azure CLI logging:
 
