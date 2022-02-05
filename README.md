@@ -16,7 +16,7 @@
     az login
     az login --use-device-code
     az config param-persist on
-    az  account list
+    az account list
     
 2.Stworzyć resource group:
 ```bash
