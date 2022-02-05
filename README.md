@@ -30,7 +30,7 @@
 
 **Powershell & Bash & cmd**
 	
-4.Zalogować się do maszyny przez ssh:
+4.Zalogować się do zasobu przez ssh:
 
 	ssh ubuntu@<vm_adress>
 	
