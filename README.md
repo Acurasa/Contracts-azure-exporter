@@ -39,7 +39,8 @@
 	scp <localpath to script>/binance_futures.py  <Unix Path on vm>
 
 6.Zainstalować Python3 & pip:
-	
+
+	sudo apt-get install azure-cli
 	sudo apt-get install python3
 	sudo apt install python3-pip
 
@@ -53,10 +54,12 @@
 	py binance_requests.py
 	deactivate
 	
-**Azure CLI**
+**Azure CLI VM**
 	
 8.Stworzyć zasob Microsoft Azure Blob Storage:
 	
+	az login
+    	az login --use-device-code
 	az storage account create \
     	--name <storage-account> \
     	--resource-group <name> \
