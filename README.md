@@ -39,7 +39,7 @@
 	scp <localpath to script>/binance_futures.py  <Unix Path on vm>
 
 6.Zainstalować Python3 & pip:
-	
+	sudo apt-get install azure-cli 
 	sudo apt-get install python3
 	sudo apt install python3-pip
 
