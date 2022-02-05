@@ -84,3 +84,7 @@
 	 	--container-name <container> \
 	 	--name <contracts.txt> \
 	 	--file <contracts.txt>
+		
+##Dokumentacje & Inne		
+https://docs.microsoft.com/en-us/azure/storage/
+https://docs.microsoft.com/pl-pl/cli/azure/
