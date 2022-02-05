@@ -4,13 +4,16 @@
 
 **Program wykonuje GET request z API giełdy handlowej binance, następnie loguje aktywne kontrakty dla wysłania na azure blob storage**
 
+#requirements
+
+
 **Azure CLI**
 
 1. Azure CLI logging:
 
     az login
     az login --use-device-code
-    az  account list
+    az account list
     
 2. Stworzyć resource group:
 
