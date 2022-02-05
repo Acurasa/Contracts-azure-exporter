@@ -17,7 +17,7 @@ print(conts)
 
 upload_file_path = str("contracts") + ".txt"
 
-# Write text to the file
+
 file = open(upload_file_path, 'w')
 for a in conts:
     file.write(a +'\n')
