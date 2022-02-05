@@ -11,6 +11,7 @@
 
 ## Deploy
 **Azure CLI**
+
 1.Azure CLI logging:
 
     az login
