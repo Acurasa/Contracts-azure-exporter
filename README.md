@@ -12,7 +12,7 @@
 
 **Azure CLI**
 
-#Execute script locally*
+# Execute script locally*
 
 	py -m venv env
 	cd env
