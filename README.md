@@ -6,6 +6,11 @@
 
 **Azure CLI**
 
+### Zainstalowane 
+**Azure CLI**
+
+## Deploy
+
 1.Azure CLI logging:
 
     az login
