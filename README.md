@@ -1,6 +1,5 @@
 # Contracts-azure-exporter
 
-**Leonid Stasyuk L_III_NW_INF_PAC2 69224**
 
 **Program wykonuje GET request z API giełdy handlowej binance, następnie loguje aktywne kontrakty dla wysłania na azure blob storage**
 
