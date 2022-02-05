@@ -15,17 +15,20 @@
 
     az login
     az login --use-device-code
+    az config param-persist on
     az  account list
     
 2.Stworzyć resource group:
 
-    az group create --name name --location eastus
+    export AZ_RESOURCE_GROUP=<resource group name>
+    
+    az group create --name ${AZ_RESOURCE_GROUP} --location eastus
 
 3.Stworzyć zasob maszyny wirtualnej Azure:   
 
 	az vm create \
 	  --location <eastus> \
-	  --resource-group <name> \
+	  --resource-group ${AZ_RESOURCE_GROUP} \
 	  --name <azure_vm_via_cli> \
 	  --size <Standard_B1s> \
 	  --image <UbuntuLTS> \
@@ -60,11 +63,17 @@
 	
 **Azure CLI**
 	
-8.Stworzyć zasob Microsoft Azure Blob Storage:
+8.Stworzyć zasob Microsoft Azure Blob Storage oraz zalogować się na maszynie wirtualnej:
+	
+	
+        az login --use-device-code
+        az config param-persist on
+	export AZ_RESOURCE_GROUP=<resource group name>	
+	export AZ_STORAGE_ACCOUNT=<storage name>
 	
 	az storage account create \
-    	--name <storage-account> \
-    	--resource-group <name> \
+    	--name ${AZ_STORAGE_ACCOUNT} \
+    	--resource-group ${AZ_RESOURCE_GROUP} \
     	--location <eastus> \
     	--sku Standard_ZRS \
     	--encryption-services blob
@@ -79,7 +88,7 @@
 10.Wysłać wygenerowany plik tekstowy contracts.txt do azure blob storage  
 
 	az storage blob upload \
-	 	--account-name <storage-account> \
+	 	--account-name ${AZ_STORAGE_ACCOUNT} \
 	 	--container-name <container> \
 	 	--name <contracts.txt> \
 	 	--file <contracts.txt>
