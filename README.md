@@ -4,13 +4,13 @@
 
 **Program wykonuje GET request z API giełdy handlowej binance, następnie loguje aktywne kontrakty dla wysłania na azure blob storage**
 
-**Azure CLI**
+
 
 ### Zainstalowane 
 **Azure CLI**
 
 ## Deploy
-
+**Azure CLI**
 1.Azure CLI logging:
 
     az login
