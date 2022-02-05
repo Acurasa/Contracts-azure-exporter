@@ -9,8 +9,19 @@
 **Azure CLI**
 
 ## Deploy
+
 **Azure CLI**
 
+#Execute script locally*
+
+	py -m venv env
+	cd env
+	Scripts\activate
+	pip install requests
+	cd .. 
+	py binance_requests.py
+	deactivate
+	
 1.Azure CLI logging:
 
     az login
