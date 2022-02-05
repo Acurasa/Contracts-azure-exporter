@@ -19,11 +19,11 @@
     az  account list
     
 2.Stworzyć resource group:
-
+```bash
     export AZ_RESOURCE_GROUP=<resource group name>
     
     az group create --name ${AZ_RESOURCE_GROUP} --location eastus
-
+```
 3.Stworzyć zasob maszyny wirtualnej Azure:   
 
 	az vm create \
