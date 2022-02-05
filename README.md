@@ -74,10 +74,10 @@
 10.Wysłać wygenerowany plik tekstowy contracts.txt do azure blob storage  
 
 	az storage blob upload \
-	 	--account-name <nawa-konta> \
-	 	--container-name <nazwa-kontenera> \
-	 	--name <nazwa-obiektu> \
-	 	--file <nazwa-pliku>
+	 	--account-name <storage-account> \
+	 	--container-name <container> \
+	 	--name <contracts.txt> \
+	 	--file <contracts.txt>
 
 		
 
