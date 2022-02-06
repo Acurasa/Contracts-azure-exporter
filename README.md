@@ -55,21 +55,21 @@
 **Powershell & Bash & cmd**
 	
 4.Zalogować się do maszyny przez ssh:
-
+```bash
 	ssh ubuntu@<vm_adress>
-	
+```
 5.Zkopiować skrypt do maszyny w.:
-	
+```bash	
 	scp <localpath to script>/binance_futures.py  <Unix Path on vm>
-
+```
 6.Zainstalować Python3 & pip:
-
+```bash	
 	sudo apt-get install azure-cli 
 	sudo apt-get install python3
 	sudo apt install python3-pip
-
+```
 7.Stworzyć  środowisko Python, zainstalować moduł **requests** oraz wykonać skrypt binance_requests.py:
-	
+```bash		
 	py -m venv env
 	cd env
 	Scripts\activate
@@ -77,6 +77,7 @@
 	cd .. 
 	py binance_requests.py
 	deactivate
+```
 	
 **Azure CLI**
 	
