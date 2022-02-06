@@ -29,28 +29,28 @@
 	
 1.Azure CLI logging:
 
-    az login
-    az login --use-device-code
-    az config param-persist on
-    az account list
+		az login
+		az login --use-device-code
+		az config param-persist on
+		az account list
     
 2.Stworzyć resource group:
 ```bash
-    export AZ_RESOURCE_GROUP=<resource group name>
-    
-    az group create --name ${AZ_RESOURCE_GROUP} --location eastus
+	export AZ_RESOURCE_GROUP=<resource group name>
+
+	az group create --name ${AZ_RESOURCE_GROUP} --location eastus
 ```
 3.Stworzyć zasob maszyny wirtualnej Azure:   
 
-	 az vm create \
-		  --location <eastus> \
-		  --resource-group ${AZ_RESOURCE_GROUP} \
-		  --name <azure_vm_via_cli> \
-		  --size <Standard_B1s> \
-		  --image <UbuntuLTS> \
-		  --public-ip-sku Standard \
-		  --admin-username <azureuser> \
-		  --admin-password <password>
+	        az vm create \
+			--location <eastus> \
+			--resource-group ${AZ_RESOURCE_GROUP} \
+			--name <azure_vm_via_cli> \
+			--size <Standard_B1s> \
+			--image <UbuntuLTS> \
+			--public-ip-sku Standard \
+			--admin-username <azureuser> \
+			--admin-password <password>
 
 **Powershell & Bash & cmd**
 	
@@ -105,11 +105,11 @@
 ```
 10.Wysłać wygenerowany plik tekstowy contracts.txt do azure blob storage  
 
-	az storage blob upload \
-	 	--account-name ${AZ_STORAGE_ACCOUNT} \
-	 	--container-name ${AZ_CONTAINER_NAME} \
-	 	--name <contracts.txt> \
-	 	--file <contracts.txt>
+		az storage blob upload \
+			--account-name ${AZ_STORAGE_ACCOUNT} \
+			--container-name ${AZ_CONTAINER_NAME} \
+			--name <contracts.txt> \
+			--file <contracts.txt>
 		
 ## Dokumentacje & Inne		
 
