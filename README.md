@@ -88,11 +88,11 @@
 	export AZ_RESOURCE_GROUP=<resource group name>	
 	export AZ_STORAGE_ACCOUNT=<storage name>
 	az storage account create \
-    	--name ${AZ_STORAGE_ACCOUNT} \
-    	--resource-group ${AZ_RESOURCE_GROUP} \
-    	--location <eastus> \
-    	--sku Standard_ZRS \
-    	--encryption-services blob
+		--name ${AZ_STORAGE_ACCOUNT} \
+		--resource-group ${AZ_RESOURCE_GROUP} \
+		--location <eastus> \
+		--sku Standard_ZRS \
+		--encryption-services blob
 ```
 
 9.Stworzyć Kontejner Azure Blob Storage:
