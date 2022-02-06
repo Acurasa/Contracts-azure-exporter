@@ -11,7 +11,7 @@
 **Python3 & pip**
 
 # Execute script locally*
-
+	```bash
 	py -m venv env
 	cd env
 	Scripts\activate
@@ -19,7 +19,8 @@
 	cd .. 
 	py binance_requests.py
 	deactivate
-	
+	```	
+
 ## Deploy
 
 **Azure CLI**
