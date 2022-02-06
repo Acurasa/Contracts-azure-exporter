@@ -42,15 +42,15 @@
 ```
 3.Stworzyć zasob maszyny wirtualnej Azure:   
 
-	az vm create \
-	  --location <eastus> \
-	  --resource-group ${AZ_RESOURCE_GROUP} \
-	  --name <azure_vm_via_cli> \
-	  --size <Standard_B1s> \
-	  --image <UbuntuLTS> \
-	  --public-ip-sku Standard \
-	  --admin-username <azureuser> \
-	  --admin-password <password>
+	 az vm create \
+		  --location <eastus> \
+		  --resource-group ${AZ_RESOURCE_GROUP} \
+		  --name <azure_vm_via_cli> \
+		  --size <Standard_B1s> \
+		  --image <UbuntuLTS> \
+		  --public-ip-sku Standard \
+		  --admin-username <azureuser> \
+		  --admin-password <password>
 
 **Powershell & Bash & cmd**
 	
