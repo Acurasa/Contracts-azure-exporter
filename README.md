@@ -8,6 +8,8 @@
 ### Zainstalowane 
 **Azure CLI**
 
+**Python3 & pip**
+
 # Execute script locally*
 
 	py -m venv env
